@@ -29,6 +29,7 @@
     "prettier"
   ],
   "rules": {
+    "no-param-reassign": "off",
     "camelcase": "off",
     "prettier/prettier": "error",
     "no-use-before-define": "off",
