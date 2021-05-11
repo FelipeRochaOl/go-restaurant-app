@@ -160,6 +160,7 @@ const FoodDetails: React.FC = () => {
 
   async function handleFinishOrder(): Promise<void> {
     try {
+      food.id = Math.floor(Math.random() * 999999999999) + 1;
       await api.post('orders', food);
       navigation.navigate('Orders');
     } catch (err) {
